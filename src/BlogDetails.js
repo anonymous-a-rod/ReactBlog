@@ -3,6 +3,8 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
     const { id } = useParams();
+    
+    
     const { data: blog, error, isPending } = useFetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs/' + id);
     const history = useHistory();
 
