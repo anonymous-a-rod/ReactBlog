@@ -56,7 +56,7 @@ const Create = () => {
                 { !isPending && <button>Add Blog</button>}
                 { isPending && <button disabled>Adding Blog...</button>}
             </form>
-            <p>(read only, as I don't want you modifying the actual DB haha)</p>
+            <p>read only, as I don't want you modifying the actual DB haha</p>
         </div>
      );
 }
