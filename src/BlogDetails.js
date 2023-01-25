@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('https://react-learning-blog.netlify.app/blogs/' + id);
+    const { data: blog, error, isPending } = useFetch('https://jsonkeeper.com/b/30XU/blogs/' + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://react-learning-blog.netlify.app/blogs/' + blog.id, {
+        fetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs/' + blog.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');

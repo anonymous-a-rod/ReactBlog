@@ -14,7 +14,7 @@ const Create = () => {
         
         setIsPending(true);
 
-        fetch('https://react-learning-blog.netlify.app/blogs',{
+        fetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs',{
             method: 'POST',
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(blog)
