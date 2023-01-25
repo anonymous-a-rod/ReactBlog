@@ -1,16 +1,58 @@
 {
   "blogs": [
     {
-      "title": "My First Blog",
-      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n\nWhere does it come from?\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.\n\nWhere can I get some?\nThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-      "author": "mario",
+      "title": "Components",
+      "body": "React is based on the concept of components, which are reusable pieces of code that represent a specific piece of a user interface. Each component has its own logic and can receive data (props) and store data (state). This allows developers to create complex user interfaces by breaking them down into smaller, manageable pieces. Components are the building blocks of a React application, and they can be nested inside one another to create a tree-like structure.",
+      "author": "Aaron",
       "id": 1
     },
     {
-      "title": "rgr",
-      "body": "rgerge",
-      "author": "mario",
+      "title": "JSX",
+      "body": "JSX is a syntax extension for JavaScript that allows you to write HTML-like elements in your code. It is used to define the structure of a component and can include logic and data from the component's props and state. JSX is transpiled into JavaScript by tools like Babel and allows developers to write more readable and maintainable code.",
+      "author": "Aaron",
       "id": 2
+    },
+    {
+      "title": "Virtual DOM",
+      "body": "React uses a virtual DOM to update the view in a more efficient way than traditional DOM manipulation. The virtual DOM is a lightweight representation of the actual DOM and is used to keep track of changes to the user interface. When a component's state or props change, React updates the virtual DOM, and then updates the actual DOM with the minimal amount of changes necessary. This improves performance and reduces the number of unnecessary updates.",
+      "author": "Aaron",
+      "id": 3
+    },
+    {
+      "title": "Props and State",
+      "body": "Props are used to pass data from a parent component to a child component, while state is used to store data that can change within a component. Props are immutable and passed down from a parent component, while state is managed within a component and can be updated. It's important to understand the difference between the two and when to use each one, as it can affect the performance and maintainability of your application.",
+      "author": "Aaron",
+      "id": 4
+    },
+    {
+      "title": "Lifecycle Methods",
+      "body": "React components have lifecycle methods that are called at different points in the component's existence, such as when it is first rendered or when it is about to be unmounted. These methods include componentDidMount, componentDidUpdate, and componentWillUnmount, among others. Understanding how these methods work and when to use them is crucial for controlling the behavior of your components and optimizing performance.",
+      "author": "Aaron",
+      "id": 5
+    },
+    {
+      "title": "Event Handling",
+      "body": "React uses a synthetic event system to handle events, which allows for cross-browser compatibility and better performance. Synthetic events are a unified way of handling events across different browsers and are similar to traditional DOM events. Understanding how to handle events and how they work in React is crucial for creating interactive user interfaces.",
+      "author": "Aaron",
+      "id": 6
+    },
+    {
+      "title": "Hooks",
+      "body": "Hooks are a new feature in React that allow you to use state and other React features in functional components, rather than just class components. Hooks allow you to write more functional and reusable code and avoid the complexity of class components. They also improve performance by minimizing unnecessary re-renders.",
+      "author": "Aaron",
+      "id": 7
+    },
+    {
+      "title": "Context API",
+      "body": "The context API allows you to share state and data between different components without having to pass props down multiple levels. This can simplify the structure of your application and improve performance. Understanding how to use the context API is crucial for managing the state of your application in a more scalable and efficient way.",
+      "author": "Aaron",
+      "id": 8
+    },
+    {
+      "title": "Performance Optimization",
+      "body": "Minimizing re-renders and using shouldComponentUpdate() or PureComponent can improve the performance of your application. Understanding how to identify and fix performance bottlenecks is crucial for creating a fast and responsive user interface.",
+      "author": "Aaron",
+      "id": 9
     }
   ]
 }
