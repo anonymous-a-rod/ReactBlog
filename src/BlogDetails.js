@@ -5,11 +5,11 @@ const BlogDetails = () => {
     const { id } = useParams();
     
     
-    const { data: blog, error, isPending } = useFetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs/' + id);
+    const { data: blog, error, isPending } = useFetch('https://my-json-server.typicode.com/anonymous-a-rod/ReactBlog/blogs/' + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs/' + blog.id, {
+        fetch('https://my-json-server.typicode.com/anonymous-a-rod/ReactBlog/blogs/' + blog.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');

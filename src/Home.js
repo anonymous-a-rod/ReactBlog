@@ -2,7 +2,7 @@ import BlogList from './BlogList';
 import useFetch from './useFetch';
 
 const Home = () => {
-    const {data : blogs, isPending, error} = useFetch('https://raw.githubusercontent.com/anonymous-a-rod/ReactBlog/main/data/db.json/blogs')
+    const {data : blogs, isPending, error} = useFetch('https://my-json-server.typicode.com/anonymous-a-rod/ReactBlog/blogs')
 
 
     return ( 
