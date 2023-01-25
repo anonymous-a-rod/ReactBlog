@@ -25,6 +25,7 @@ const BlogDetails = () => {
                 <p>{ blog.author }</p>
                 <div> { blog.body }</div>
                 <button onClick={handleClick}>delete</button>
+                <p>(read only, as I don't want you modifying the actual DB haha)</p>
                 </article>}
         </div>
      );

@@ -50,12 +50,13 @@ const Create = () => {
                     value={author} 
                     onChange={(e) => setAuthor(e.target.value)} 
                 >
-                    <option value="aaron">Aaron</option>
-                    <option value="daniel">Daniel</option>
+                    <option value="Aaron">Aaron</option>
+                    <option value="Daniel">Daniel</option>
                 </select>
                 { !isPending && <button>Add Blog</button>}
                 { isPending && <button disabled>Adding Blog...</button>}
             </form>
+            <p>(read only, as I don't want you modifying the actual DB haha)</p>
         </div>
      );
 }
