@@ -19,6 +19,7 @@
 }
 .navbar .links {
   margin-left: auto;
+  min-width: 175px;
 }
 .navbar a {
   margin-left: 16px;
